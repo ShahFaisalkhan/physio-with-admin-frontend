@@ -1,71 +1,4 @@
 /* src/components/Services.css */
-/* .services {
-    padding: 2rem;
-    background-color: #f9f9f9;
-    text-align: center;
-  }
-  
-  .services-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 2rem;
-  }
-  
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    justify-items: center;
-  }
-  
-  .service-card {
-    background-color: #ffffff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  }
-  
-  .service-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: #0077cc;
-  }
-  
-  .service-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 0.5rem;
-  }
-  
-  .service-description {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.5;
-  }
-  
-   @media (max-width: 1024px) {
-    .services-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .services-grid {
-      grid-template-columns: 1fr;
-    }
-  } 
-   */
 /* Services section wrapper */
 .services {
   padding: 50px 20px;
@@ -138,18 +71,6 @@
   color: #023047;
   margin-bottom: 10px;
 }
-
-/* Special Highlight for Second Card */
-/* .highlight {
-  color: #f08080;
-}
-
-/* Description */
-/* .service-content p {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 15px;
-}  */
 
 /* Read More Button */
 .read-more {

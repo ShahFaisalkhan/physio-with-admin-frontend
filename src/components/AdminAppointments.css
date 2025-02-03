@@ -86,14 +86,14 @@
     padding: 5px 10px;
     font-size: 0.8rem;
   }
-  /* .header {
+   /* .header {
     display: flex;
     justify-content: space-between; 
     align-items: center;
     padding: 10px 20px;
-    border-bottom: 1px solid #ddd; */
-    /* position: relative; /* For absolute centering */
-  /* }  */
+    border-bottom: 1px solid #ddd; 
+     position: relative; 
+   }   */
   .header.header-admin {
     display: flex;
     justify-content: space-between; /* Space between heading and right elements */
