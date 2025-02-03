@@ -1,0 +1,150 @@
+/* src/components/Appointment.css */
+/* .appointment {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .appointment-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .appointment-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .appointment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .appointment-form input,
+  .appointment-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .appointment-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .appointment-form input:focus,
+  .appointment-form textarea:focus {
+    border-color: #0077cc;
+  }
+  
+  .btn-primary {
+    padding: 0.75rem 1.5rem;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #005fa3;
+  }
+  
+  /* Responsive Design */
+  /* @media (max-width: 768px) {
+    .appointment-form {
+      width: 90%;
+    }
+  }
+  select option:disabled {
+    color: #999; 
+    font-style: italic; 
+  }  */
+  .appointment {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .appointment-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #023047;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  
+  /* Appointment Form */
+  .appointment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .appointment-form input,
+  .appointment-form textarea,
+  .appointment-form select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .appointment-form input:focus,
+  .appointment-form textarea:focus,
+  .appointment-form select:focus {
+    border-color: #0077cc;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+  }
+  
+  /* Submit Button */
+  .btn-primary {
+    padding: 0.75rem 1.5rem;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+  }
+  
+  .btn-primary:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .appointment-form {
+      width: 90%;
+    }
+  }
+  
+  select option:disabled {
+    color: #999;
+    font-style: italic;
+  }
+  

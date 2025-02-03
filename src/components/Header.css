@@ -1,0 +1,273 @@
+/* src/components/Header.css */
+
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure it spans the entire width */
+  /* z-index: 1000;
+}  */
+/* Scope to only the Header component */
+/* .nav-menu ul li a.active {
+  color: #ffdd57;
+  font-weight: bold;
+}
+
+.header.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+   top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 1000;
+  height: 45px;
+}
+
+.logo a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+/* .nav-menu ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */
+/* .nav-menu ul {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  /* top: 4rem; */
+  /* right: 4rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  z-index: 2000; 
+}
+.nav-menu.show ul {
+  display: flex;
+}
+.nav-menu-toggle {
+  display: block;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #0077cc;
+}
+
+.cta-button .btn {
+  padding: 0.5rem 1rem;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button .btn:hover {
+  background-color: #005fa3; */
+/* }  */
+
+/* @media (max-width: 768px) {
+  .nav-menu ul {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .nav-menu ul.show {
+    display: flex;
+  } 
+  
+  .nav-menu-toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}  */
+
+/* @media (min-width: 768px) {
+  .nav-menu ul {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .nav-menu-toggle {
+    display: none;
+  }
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0077cc;
+    text-decoration: none;
+  }
+} */ */
+ /* Reset body overflow to avoid any unwanted scrolling */
+body {
+  overflow-x: hidden;
+}
+
+/* Main Header Layout */
+.header.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 80px;
+  box-sizing: border-box;
+}
+
+/* Logo styling */
+.logo a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+/* Navigation Menu */
+.nav-menu ul {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  right: 0; /* Ensure it is aligned to the right of the screen */
+  top: 45px; /* Ensure it starts below the header */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  z-index: 2000;
+  width: 200px; /* Set a max width */
+}
+
+.nav-menu.show ul {
+  display: flex;
+}
+
+.nav-menu-toggle {
+  display: block;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333;
+}
+
+/* Navigation link styling */
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #0077cc;
+}
+
+/* Active link styling */
+.nav-menu ul li a.active {
+  color: #ffdd57;
+  font-weight: bold;
+}
+
+/* Large screens: display nav menu horizontally */
+@media (min-width: 768px) {
+  .nav-menu ul {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    box-shadow: none;
+    padding: 0;
+    width: auto; /* Remove the fixed width */
+  }
+
+  .nav-menu-toggle {
+    display: none;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0077cc;
+    text-decoration: none;
+  }
+}
+/* Active link styling */
+.nav-menu ul li .active {
+  color: #0077cc;  /* Highlight color */
+  font-weight: bold;
+  /* border-bottom: 2px solid #0077cc; Underline effect */
+  transition: all 0.3s ease;
+}
+
+/* Ensure buttons in navigation look like links */
+.nav-menu ul li button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-menu ul li button:hover {
+  color: #0077cc;
+}
+
+/* Ensure header buttons look like links */
+.logo-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0077cc;
+  cursor: pointer;
+}

@@ -1,0 +1,159 @@
+.admin-appointments table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .admin-appointments th, .admin-appointments td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .admin-appointments th {
+    background-color: #f4f4f4;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .pagination button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+  }
+  .logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: auto; /* Align to the right */
+  }
+  
+  .logout-button:hover {
+    background-color: #e63939;
+  }
+  .admin-appointments .loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #007bff;
+  }
+  .admin-appointments .refreshing {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #007bff;
+    margin-top: 10px;
+  }
+  h2 {
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }    
+  .notifications {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .notification-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: relative;
+  }
+  
+  .notification-button .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+  /* .header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd; */
+    /* position: relative; /* For absolute centering */
+  /* }  */
+  .header.header-admin {
+    display: flex;
+    justify-content: space-between; /* Space between heading and right elements */
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    position: relative; /* For absolute centering */
+    margin-top:40px;
+  }
+  .header-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center the title horizontally */
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between the notification icon and logout button */
+    margin-right: 10px; /* Add margin to the right of the notification icon */
+  }
+  
+  .notifications {
+    position: relative;
+  }
+  
+  .notification-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: relative;
+    margin-right: 10px; /* Add margin to the right of the notification icon */
+  }
+  
+  .notification-button .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+  
+  .logout-button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #0056b3;
+  }
+    
