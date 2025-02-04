@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>PhysioCare</h3>
+          <h3>Syed Ghulam Hussain Physio</h3>
           <p>Helping you regain strength and live pain-free with expert physiotherapy services.</p>
         </div>
         <div className="footer-section">
@@ -21,9 +21,9 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h4>Contact Us</h4>
-          <p>📍 123 Health Street, Wellness City</p>
-          <p>📞 (123) 456-7890</p>
-          <p>✉️ support@physiocare.com</p>
+          <p>📍 Main Market Near Ismaila Stop</p>
+          <p>📞 0331-93700567</p>
+          <p>✉️ syedghulamhussain@gmail.com</p>
         </div>
       </div>
       <div className="footer-bottom">

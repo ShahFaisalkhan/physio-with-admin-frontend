@@ -133,6 +133,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './Contact.css';
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -147,7 +148,9 @@ const Contact = () => {
     setStatus('Sending...');
 
     try {
-      const response = await fetch('http://localhost:5000/send-email', { // Change to your actual backend URL
+      // const response = await fetch('http://localhost:5000/send-email', { // Change to your actual backend URL
+      const response = await fetch('API_BASE_URL/send-email', { // Change to your actual backend URL
+
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

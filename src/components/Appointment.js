@@ -331,6 +331,7 @@ import LoginPopup from "./LoginPopup";
 import SignupPopup from "./SignupPopup";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 const Appointment = () => {
   const { isLoggedIn, login } = useContext(AuthContext); // Access global login function
@@ -361,7 +362,8 @@ const Appointment = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
     if (e.target.name === "date" && isLoggedIn) {
-      fetch(`http://localhost:5000/api/slots?date=${e.target.value}`)
+      // fetch(`http://localhost:5000/api/slots?date=${e.target.value}`)
+      fetch(`${API_BASE_URL}/api/slots?date=${e.target.value}`)
         .then((res) => res.json())
         .then((data) => setSlots(data.slots))
         .catch((err) => console.error(err));
@@ -387,7 +389,9 @@ const Appointment = () => {
     }
   
     try {
-      const response = await fetch("http://localhost:5000/api/appointments", {
+      // const response = await fetch("http://localhost:5000/api/appointments", {
+        const response = await fetch(`${API_BASE_URL}/api/appointments`, {
+
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -422,7 +426,8 @@ const Appointment = () => {
   
   const handleSignupSubmit = async (signupData) => {
         try {
-          const response = await fetch('http://localhost:5000/api/register', {
+          // const response = await fetch('http://localhost:5000/api/register', {
+            const response = await fetch(`${API_BASE_URL}/api/register`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(signupData),
@@ -513,7 +518,8 @@ const Appointment = () => {
       // };
       const handleLoginSubmit = async (loginData) => {
         try {
-          const response = await fetch("http://localhost:5000/api/login", {
+          // const response = await fetch("http://localhost:5000/api/login", {
+            const response = await fetch(`${API_BASE_URL}/api/login`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(loginData),

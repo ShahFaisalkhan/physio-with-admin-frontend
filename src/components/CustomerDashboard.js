@@ -211,6 +211,7 @@
 // export default CustomerDashboard;
 import React, { useState, useEffect } from 'react';
 import './CustomerDashboard.css';
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 const CustomerDashboard = () => {
   const [appointments, setAppointments] = useState([]);
@@ -222,7 +223,9 @@ const CustomerDashboard = () => {
 
   const fetchAppointments = (page = 1, playSound = false) => {
     const token = localStorage.getItem('token'); // Retrieve the user's token
-    fetch(`http://localhost:5000/api/appointments/user-appointments?page=${page}&limit=15`, {
+    // fetch(`http://localhost:5000/api/appointments/user-appointments?page=${page}&limit=15`, {
+      fetch(`${API_BASE_URL}/api/appointments/user-appointments?page=${page}&limit=15`, {
+
       method: 'GET',
       headers: {
         Authorization: `Bearer ${token}`, // Pass token for authentication

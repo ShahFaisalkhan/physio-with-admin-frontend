@@ -398,6 +398,7 @@
 import React, { useEffect, useState } from 'react';
 import './AdminAppointments.css';
 import { useNavigate } from 'react-router-dom';
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 const AdminAppointments = () => {
   const [appointments, setAppointments] = useState([]);
@@ -430,7 +431,9 @@ const AdminAppointments = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/appointments?page=${page}&limit=20`, {
+      // const response = await fetch(`http://localhost:5000/api/admin/appointments?page=${page}&limit=20`, {
+        const response = await fetch(`${API_BASE_URL}/api/admin/appointments?page=${page}&limit=20`, {
+
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`, // Send the token with the request
         },
@@ -463,7 +466,7 @@ const AdminAppointments = () => {
 
   useEffect(() => {
     fetchAppointments(currentPage); // Initial load
-
+    console.log("API_BASE_URL is",API_BASE_URL)
     const intervalId = setInterval(() => {
       fetchAppointments(currentPage, true); // Background refresh
     }, 5000); // Refresh every 5 seconds
@@ -473,7 +476,9 @@ const AdminAppointments = () => {
 
   const handleStatusUpdate = async (id, status) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/appointments/${id}`, {
+      // const response = await fetch(`http://localhost:5000/api/admin/appointments/${id}`, {
+        const response = await fetch(`${API_BASE_URL}/api/admin/appointments/${id}`, {
+
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
