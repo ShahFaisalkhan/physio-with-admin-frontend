@@ -149,7 +149,7 @@ const Contact = () => {
 
     try {
       // const response = await fetch('http://localhost:5000/send-email', { // Change to your actual backend URL
-      const response = await fetch('API_BASE_URL/send-email', { // Change to your actual backend URL
+      const response = await fetch(`${API_BASE_URL}/send-email`, { // Change to your actual backend URL{}
 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
